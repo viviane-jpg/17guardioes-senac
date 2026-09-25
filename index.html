@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Guardiões do Reino dos Talentos - Grimório Oficial</title>
+    <style>
+        @page {
+            size: A5;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6dfd5;
+            color: #2b1d0c;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact;
+        }
+        .page {
+            width: 148mm;
+            height: 210mm;
+            background-color: #f7f3eb;
+            background-image: radial-gradient(circle, #f9f6f0 0%, #ede6db 100%);
+            border: 8px solid #4a3319;
+            box-sizing: border-box;
+            padding: 12mm 10mm;
+            position: relative;
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+        .page::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border: 2px solid #b39b7d;
+            pointer-events: none;
+            margin: 4px;
+        }
+        .page-header {
+            text-align: center;
+            font-size: 10pt;
+            letter-spacing: 2px;
+            color: #5a3d28;
+            text-transform: uppercase;
+            border-bottom: 1px solid #b39b7d;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+        }
+        .page-footer {
+            text-align: center;
+            font-size: 10pt;
+            color: #5a3d28;
+            border-top: 1px solid #b39b7d;
+            padding-top: 4px;
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .page-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        h1, h2, h3 {
+            font-family: Arial, sans-serif;
+            color: #4a1515;
+            text-align: center;
+            margin-top: 0;
+        }
+        h1 { font-size: 20pt; margin-bottom: 6px; }
+        h2 { font-size: 15pt; margin-bottom: 4px; border-bottom: 1px solid #c7b299; padding-bottom: 2px; }
+        p {
+            font-size: 12pt;
+            line-height: 1.35;
+            margin: 4px 0;
+            text-align: justify;
+        }
+        .badge-box {
+            background-color: #efe8dc;
+            border: 1px solid #b39b7d;
+            padding: 6px 8px;
+            border-radius: 4px;
+            margin: 4px 0;
+        }
+        .attribute-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            margin: 6px 0;
+        }
+        .attribute-item {
+            font-size: 10pt;
+            background: #e6dfd5;
+            padding: 3px 5px;
+            border-radius: 3px;
+            border-left: 3px solid #5a3d28;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+            margin-top: 4px;
+        }
+        th, td {
+            border: 1px solid #b39b7d;
+            padding: 3px 4px;
+            text-align: left;
+        }
+        th {
+            background-color: #dcd2c3;
+            color: #4a1515;
+        }
+        .quote-box {
+            font-style: italic;
+            border-left: 3px solid #4a1515;
+            padding-left: 8px;
+            margin: 8px 0;
+            color: #3b2a1a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CAPA -->
+    <section class="page" style="justify-content: center; text-align: center;">
+        <div class="page-content" style="justify-content: center; align-items: center;">
+            <div style="font-size: 22pt; color: #8c6747; margin-bottom: 10px;"><img src="fleur-de-lis.png" alt="" width="50px"><img src="fire.png" alt="" width="50px"> <img src="fleur-de-lis.png" alt="" width="50px"></div>
+            <h1 style="font-size: 20pt; color: #4a1515; margin-bottom: 6px;">GUARDIÕES DO REINO DOS TALENTOS</h1>
+            <p style="font-size: 11pt; font-style: italic; color: #5a3d28; text-align: center; margin-bottom: 30px;">17 talentos. 17 caminhos. Um único reino.</p>
+            <div style="font-size: 9pt; color: #6b533c; border-top: 1px solid #c7b299; border-bottom: 1px solid #c7b299; padding: 6px 15px; display: inline-block;">
+                Grimório Oficial de Sabedoria & Alinhamento
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Grimório Oficial</span>
+            <span>Capa</span>
+        </footer>
+    </section>
+
+    <!-- INTRODUÇÃO -->
+    <section class="page">
+        <header class="page-header">Abertura</header>
+        <div class="page-content">
+            <h2>A Lenda da Chama da Contribuição</h2>
+            <p>Muito antes dos guardiões se conhecerem, o Reino dos Talentos era um lugar próspero, sustentado por uma fonte mágica conhecida como A Chama da Contribuição.</p>
+            <p>Essa chama tinha uma característica curiosa: ela não podia ser alimentada por uma única pessoa.</p>
+            <p>Por mais poderoso que fosse um guardião, nenhum possuía sozinho todas as habilidades necessárias para manter o reino vivo.</p>
+            <p>A Chama dependía de algo maior: a complementaridade.</p>
+            <p>Durante séculos, os habitantes do reino acreditaram que o segredo da grandeza estava em desenvolver talentos iguais. Queriam mais estrategistas, mais comunicadores, mais realizadores.</p>
+            <p>Mas quanto mais semelhantes se tornavam, mais frágil o reino ficava.</p>
+            <p>Foi então que os antigos sábios descobriram uma verdade esquecida:</p>
+            
+            <div class="quote-box">
+                "O reino não prospera porque seus guardiões são parecidos. O reino prospera porque seus talentos são diferentes."
+            </div>
+            
+            <p>Foi nesse momento que nasceram os 17 Guardiões do Reino dos Talentos.</p>
+        </div>
+        <footer class="page-footer">
+            <span>Reino dos Talentos</span>
+            <span>Página 2</span>
+        </footer>
+    </section>
+
+    <!-- ORDENAÇÃO / IDENTIDADE VISUAL -->
+    <section class="page">
+        <header class="page-header">As Ordens do Reino</header>
+        <div class="page-content">
+            <h2>As Quatro Grandes Ordens</h2>
+            <p>Os guardiões estão divididos em quatro grandes ordens que sustentam o equilíbrio do reino:</p>
+            <div class="badge-box">
+                <strong><img src="swords.png" alt="" width="30px"> Ordem da Execução & Lealdade</strong><br>
+                <em>Símbolos:</em> espada, engrenagem, corrente, chama.<br>
+                <em>Sensação:</em> ação, movimento, compromisso.
+            </div>
+            <div class="badge-box">
+                <strong><img src="shield.png" alt="" width="30px"> Ordem do Pertencimento & Propósito</strong><br>
+                <em>Símbolos:</em> círculo, árvore, ponte, cristal, chama.<br>
+                <em>Sensação:</em> conexão, cuidado, propósito e comunidade.
+            </div>
+            <div class="badge-box">
+                <strong><img src="compass.png" alt="" width="30px"> Guilda da Visão & Futuro</strong><br>
+                <em>Símbolos:</em> bússola, mapa, estrela, torre, caminhos.<br>
+                <em>Sensação:</em> estratégia, direção e possibilidades.
+            </div>
+            <div class="badge-box">
+                <strong><img src="balance.png" alt="" width="30px">  Guilda da Análise & Soluções</strong><br>
+                <em>Símbolos:</em> lente, pergaminho, balança, engrenagem, cristal.<br>
+                <em>Sensação:</em> investigação, lógica, prudência e conhecimento.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Reino dos Talentos</span>
+            <span>Página 3</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 1: BRUNA -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #01 </header>
+        <div class="page-content">
+            <h2>1. BRUNA</h2>
+            <p><strong>Título:</strong> A Guardiã dos Compromissos</p>
+            <p><strong>Guilda / Ordem:</strong> Ordem da Execução & Lealdade </p>
+            
+            <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="bruna.jpg" alt="Símbolo da Guardiã Bruna" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+
+            <p><strong>Dom Principal & Especialidade:</strong> Acompanhamento, responsabilidade e confiabilidade</p>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>7 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>8 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Manter a consistência das entregas e assegurar que as promessas do reino sejam honradas.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso garantir compromissos.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 4</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 2: FÁBIO -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #02</header>
+        <div class="page-content">
+            <h2>2. FÁBIO</h2>
+            <p><strong>Título:</strong> O Executor Veloz</p>
+            <p><strong>Guilda / Ordem:</strong> Ordem da Execução & Lealdade </p>
+            <p><strong>Dom Principal & Especialidade:</strong> Transforma ideias em ação e entrega</p>
+            
+              <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="fabio.jpg" alt="Símbolo da Guardiã Fábio" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+
+
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>5 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>6 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Agilidade de entrega que materializa as ideias no mundo físico em tempo recorde.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso executar rapidamente.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 5</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 3: GABRIELA -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #03</header>
+        <div class="page-content">
+            <h2>3. GABRIELA</h2>
+            <p><strong>Título:</strong> A Cultivadora de Potenciais</p>
+            <p><strong>Guilda / Ordem:</strong> Ordem do Pertencimento & Propósito</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Identifica potencial, crescimento e necessidades humanas</p>
+            
+            <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="gabriela.jpg" alt="Símbolo da Guardiã Gabriela" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+
+
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>7 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>8 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Reconhecer pontos fortes nos companheiros e cuidar das necessidades humanas.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso desenvolver pessoas.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 6</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 4: JOCASTRA -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #04</header>
+        <div class="page-content">
+            <h2>4. JOCASTRA</h2>
+            <p><strong>Título:</strong> A Guardiã dos Valores</p>
+            <p><strong>Guilda / Ordem:</strong> Ordem do Pertencimento & Propósito</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Significado, propósito e coerência</p>
+            
+             <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="jocastra.jpg" alt="Símbolo da Guardiã Jocastra" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+
+
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>8 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>5 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>7 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Conectar as ações da equipe à essência ética e ao propósito maior do reino.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso conectar propósito e valores.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 7</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 5: KATIA -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #05</header>
+        <div class="page-content">
+            <h2>5. KATIA</h2>
+            <p><strong>Título:</strong> A Estrategista dos Caminhos</p>
+            <p><strong>Guilda / Ordem:</strong> Guilda da Visão & Futuro</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Caminhos alternativos e visão de cenário</p>
+
+           
+            <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="katia.jpg" alt="Símbolo da Guardiã Katia" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>9 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Iluminar rotas alternativas e antecipar cenários complexos para o reino.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso pensar estrategicamente.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 8</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 6: LILIAN -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #06</header>
+        <div class="page-content">
+            <h2>6. LILIAN</h2>
+            <p><strong>Título:</strong> A Camaleã dos Mares</p>
+            <p><strong>Guilda / Ordem:</strong> Ordem da Execução & Lealdade</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Flexibilidade e resposta rápida</p>
+            
+             <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="lilian.jpg" alt="Símbolo da Guardiã Lilian" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+
+
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>7 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>9 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>8 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>6 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Adaptar a rota com leveza e prontidão sempre que as condições mudam.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso adaptar-se a mudanças.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 9</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 7: LUCAS -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #07</header>
+        <div class="page-content">
+            <h2>7. LUCAS</h2>
+            <p><strong>Título:</strong> O Arquiteto de Laços</p>
+            <p><strong>Guilda / Ordem:</strong> Ordem do Pertencimento & Propósito</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Relacionamentos autênticos e cooperação</p>
+            
+                   
+             <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="lucas.jpg" alt="Símbolo da Guardiã Lucas" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+
+
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>6 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Criar um ambiente seguro de cooperação genuína entre os aliados do reino.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso construir confiança.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 10</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 8: LUCIANE -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #08</header>
+        <div class="page-content">
+            <h2>8. LUCIANE</h2>
+            <p><strong>Título:</strong> A Restauradora de Crises</p>
+            <p><strong>Guilda / Ordem:</strong> Guilda da Análise & Soluções</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Restauração e solução de crises</p>
+
+
+                     
+             <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="luciane.jpg" alt="Símbolo da Guardiã Luciane" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>7 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>8 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>10 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Encontrar soluções práticas e restaurar a ordem em momentos difíceis.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso resolver problemas difíceis.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 11</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 9: MARCELO -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #09</header>
+        <div class="page-content">
+            <h2>9. MARCELO</h2>
+            <p><strong>Título:</strong> O Guardião da Memória</p>
+            <p><strong>Guilda / Ordem:</strong> Guilda da Análise & Soluções</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Contexto e memória institucional</p>
+
+
+            <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="marcelo.jpg" alt="Símbolo da Guardiã Marcelo" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>8 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>5 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>7 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>9 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Resgatar histórias, aprendizados passados e contexto para evitar erros antigos.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso aprender com experiências.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 12</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 10: MARINETE -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #10 </header>
+        <div class="page-content">
+            <h2>10. MARINETE</h2>
+            <p><strong>Título:</strong> A Mentora de Talentos</p>
+            <p><strong>Guilda / Ordem:</strong> Ordem do Pertencimento & Propósito</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Mentoria e aprendizagem</p>
+
+
+
+            <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="marinete.jpg" alt="Símbolo da Guardiã Marinete" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>7 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>7 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Guiar o aprendizado e acelerar o desenvolvimento contínuo da equipe.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso desenvolver competências.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 13</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 11: PANDORA -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #11</header>
+        <div class="page-content">
+            <h2>11. PANDORA</h2>
+            <p><strong>Título:</strong> A Mestra da Lógica</p>
+            <p><strong>Guilda / Ordem:</strong> Guilda da Análise & Soluções</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Objetividade, lógica e diagnóstico</p>
+
+
+             <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="pandora.png" alt="Símbolo da Guardiã Pandora" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>7 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>5 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>5 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>10 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Trazer clareza analítica livre de viés baseando-se estritamente em fatos e evidências.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso analisar fatos e evidências.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 14</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 12: PATRÍCIA MENIS -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #12</header>
+        <div class="page-content">
+            <h2>12. PATRÍCIA MENIS</h2>
+            <p><strong>Título:</strong> A Guardiã do Círculo</p>
+            <p><strong>Guilda / Ordem:</strong> Ordem do Pertencimento & Propósito</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Pertencimento e participação</p>
+
+
+             <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="patricia_m.jpg" alt="Símbolo da Guardiã Patricia Menis" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>6 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Garantir espaço para todas as vozes e integrar todos os membros da equipe.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso garantir inclusão.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 15</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 13: PATRÍCIA SPADACCINI -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #13</header>
+        <div class="page-content">
+            <h2>13. PATRÍCIA SPADACCINI</h2>
+            <p><strong>Título:</strong> A Faro da Esperança</p>
+            <p><strong>Guilda / Ordem:</strong> Ordem do Pertencimento & Propósito</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Motivação, entusiasmo e esperança</p>
+
+
+            <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="patricia_s.jpg" alt="Símbolo da Guardiã Patricia Spadaccini" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>7 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>8 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>4 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Injetar otimismo e reerguer o ânimo do time em momentos de esgotamento.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso reenergizar o grupo.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 16</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 14: RENATA -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #14</header>
+        <div class="page-content">
+            <h2>14. RENATA</h2>
+            <p><strong>Título:</strong> A Escudeira da Prudência</p>
+            <p><strong>Guilda / Ordem:</strong> Guilda da Análise & Soluções</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Prudência e antecipação de obstáculos</p>
+
+
+               <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="renata.jpg" alt="Símbolo da Guardiã Renata" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>8 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>5 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>10 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Identificar armadilhas e avaliar riscos com precisão antes de avanço do grupo.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso avaliar riscos.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 17</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 15: ROBERTO -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #15</header>
+        <div class="page-content">
+            <h2>15. ROBERTO</h2>
+            <p><strong>Título:</strong> O Sábio Pesquisador</p>
+            <p><strong>Guilda / Ordem:</strong> Guilda da Análise & Soluções</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Pesquisa, reflexão e estudo</p>
+
+
+             <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="roberto.jpg" alt="Símbolo da Guardiã Roberto" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>8 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>4 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>5 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>10 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Aprofundar conceitos técnicos para embasar o reino com fundamentação sólida.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso aprofundar conhecimentos.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 18</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 16: SILVIA -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #16</header>
+        <div class="page-content">
+            <h2>16. SILVIA</h2>
+            <p><strong>Título:</strong> A Ativadora da Ação</p>
+            <p><strong>Guilda / Ordem:</strong> Ordem da Execução & Lealdade</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Transforma intenção em movimento, cria energia para começar e impulsiona a execução</p>
+
+            
+             <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="silvia.jpg" alt="Símbolo da Guardiã Silvia" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>6 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>7 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>5 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Gerar o impulso inicial necessário para transformar ideias paradas em movimento real.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso sair da paralisia e iniciar uma ação.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 19</span>
+        </footer>
+    </section>
+
+    <!-- FICHA 17: THOMAS -->
+    <section class="page">
+        <header class="page-header">Ficha do Guardião #17</header>
+        <div class="page-content">
+            <h2>17. THOMAS</h2>
+            <p><strong>Título:</strong> A Bússola do Reino</p>
+            <p><strong>Guilda / Ordem:</strong> Guilda da Visão & Futuro</p>
+            <p><strong>Dom Principal & Especialidade:</strong> Foco, direção e clareza</p>
+
+
+            <!-- ESPAÇO PARA A IMAGEM DO GUARDIÃO -->
+            <div style="text-align: center; margin: 4px 0;">
+               <img src="thomas.png" alt="Símbolo da Guardiã Thomas" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #b39b7d; border-radius: 50%; padding: 2px; background: #fdfbf7;">
+            </div>
+            
+            <div class="attribute-grid">
+                <div class="attribute-item">Estratégia & Visão: <strong>10 / 10</strong></div>
+                <div class="attribute-item">Execução & Impulso: <strong>7 / 10</strong></div>
+                <div class="attribute-item">Relacionamento: <strong>5 / 10</strong></div>
+                <div class="attribute-item">Análise & Diagnóstico: <strong>8 / 10</strong></div>
+            </div>
+
+            <div class="badge-box">
+                <strong>Sua Maior Contribuição para a Chama:</strong> Eliminar distrações e apontar exatamente qual o alvo priorizado.
+            </div>
+            <div class="badge-box" style="background-color: #e5d9c5;">
+                <strong>Quando Convocá-lo?:</strong> Quando preciso definir prioridades.
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Guardiões do Reino</span>
+            <span>Página 20</span>
+        </footer>
+    </section>
+
+    <!-- QUEM PROCURAR EM CADA SITUAÇÃO - PARTE 1 -->
+    <section class="page">
+        <header class="page-header">Guia de Consulta</header>
+        <div class="page-content">
+            <h2>Quem Procurar em Cada Situação? (I)</h2>
+            <table>
+                <tr>
+                    <th>Situação</th>
+                    <th>Guardião</th>
+                    <th>Especialidade</th>
+                </tr>
+                <tr><td>Garantir compromissos</td><td>Bruna</td><td>Acompanhamento, responsabilidade e confiabilidade</td></tr>
+                <tr><td>Pensar estrategicamente</td><td>Katia</td><td>Caminhos alternativos e visão de cenário</td></tr>
+                <tr><td>Sair da paralisia</td><td>Silvia</td><td>Transforma intenção em movimento</td></tr>
+                <tr><td>Executar rapidamente</td><td>Fábio</td><td>Transforma ideias em ação e entrega</td></tr>
+                <tr><td>Conectar propósito e valores</td><td>Jocastra</td><td>Significado, propósito e coerência</td></tr>
+                <tr><td>Adaptar-se a mudanças</td><td>Lilian</td><td>Flexibilidade e resposta rápida</td></tr>
+                <tr><td>Construir confiança</td><td>Lucas</td><td>Relacionamentos autênticos e cooperação</td></tr>
+                <tr><td>Resolver problemas difíceis</td><td>Luciane</td><td>Restauração e solução de crises</td></tr>
+                <tr><td>Aprender com experiências</td><td>Marcelo</td><td>Contexto e memória institucional</td></tr>
+            </table>
+        </div>
+        <footer class="page-footer">
+            <span>Guia de Consulta</span>
+            <span>Página 21</span>
+        </footer>
+    </section>
+
+    <!-- QUEM PROCURAR EM CADA SITUAÇÃO - PARTE 2 -->
+    <section class="page">
+        <header class="page-header">Guia de Consulta</header>
+        <div class="page-content">
+            <h2>Quem Procurar em Cada Situação? (II)</h2>
+            <table>
+                <tr>
+                    <th>Situação</th>
+                    <th>Guardião</th>
+                    <th>Especialidade</th>
+                </tr>
+                <tr><td>Desenvolver competências</td><td>Marinete</td><td>Mentoria e aprendizagem</td></tr>
+                <tr><td>Analisar fatos e evidências</td><td>Pandora</td><td>Objetividade, lógica e diagnóstico</td></tr>
+                <tr><td>Garantir inclusão</td><td>Patrícia Menis</td><td>Pertencimento e participação</td></tr>
+                <tr><td>Reenergizar o grupo</td><td>Patrícia Spadaccini</td><td>Motivação, entusiasmo e esperança</td></tr>
+                <tr><td>Avaliar riscos</td><td>Renata</td><td>Prudência e antecipação de obstáculos</td></tr>
+                <tr><td>Aprofundar conhecimentos</td><td>Roberto</td><td>Pesquisa, reflexão e estudo</td></tr>
+                <tr><td>Definir prioridades</td><td>Thomas</td><td>Foco, direção e clareza</td></tr>
+                <tr><td>Desenvolver pessoas</td><td>Gabriela</td><td>Identifica potencial e necessidades</td></tr>
+            </table>
+        </div>
+        <footer class="page-footer">
+            <span>Guia de Consulta</span>
+            <span>Página 22</span>
+        </footer>
+    </section>
+
+    <!-- PÁGINA FINAL -->
+    <section class="page">
+        <header class="page-header">Conclusão</header>
+        <div class="page-content" style="justify-content: center; text-align: center;">
+            <h2 style="color: #4a1515;">🏰 ANTES DE FECHAR ESTE LIVRO...</h2>
+            <p style="text-align: center;">Durante esta jornada você descobriu talentos.<br>Descobriu poderes.<br>Descobriu limitações.<br>Descobriu guardiões que enxergam aquilo que você não vê.</p>
+            <p style="text-align: center; margin-top: 15px;">Guardando este livro, leve consigo uma última reflexão:</p>
+            
+            <div class="quote-box" style="text-align: center; border-left: none; border-top: 2px solid #4a1515; border-bottom: 2px solid #4a1515; padding: 10px;">
+                Quem você se torna quando para de tentar ser todos os guardiões e passa a confiar no reino?<br><br>
+                Qual é o preço que você paga por não pedir ajuda?
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Fim da Jornada</span>
+            <span>Página 23</span>
+        </footer>
+    </section>
+
+</body>
+</html>
